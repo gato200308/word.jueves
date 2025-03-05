@@ -1,0 +1,96 @@
+/* Rick and Morty Inspired Styles */
+body {
+    background-color: #0b0c10;
+    color: #66fcf1;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #45a29e;
+}
+
+#search-field {
+    background-color: #c5c6c7;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #45a29e;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #66fcf1;
+}
+
+.character-card {
+    background: #1f2833;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.character-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px #66fcf1;
+}
+
+.character-card img {
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.character-card h3 {
+    margin: 10px 0;
+    cursor: pointer;
+    color: #66fcf1;
+}
+
+.character-card h3:hover {
+    color: #45a29e;
+}
+
+.details-link {
+    color: #66fcf1;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.details-link:hover {
+    color: #45a29e;
+}
+
+.modal-content {
+    background: #1f2833;
+    color: #66fcf1;
+}
+
+.modal-header {
+    border-bottom: 1px solid #45a29e;
+}
+
+.modal-footer {
+    border-top: 1px solid #45a29e;
+}
+
+/* Fix for search card rendering */
+#character-container .col-md-4 {
+    display: flex;
+    justify-content: center;
+}
+
+#character-container .character-card {
+    width: 100%;
+    max-width: 300px;
+}
